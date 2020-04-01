@@ -24,6 +24,7 @@ export const Container = styled.div`
   }
 
   ul {
+    display: block;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 15px;
@@ -40,14 +41,15 @@ export const Time = styled.li`
 
   strong {
     display: block;
-    color: ${props => (props.available ? '#999' : '#7159c1')};
+    color: ${props => (props.available ? '#999' : '#9400D3')};
     font-size: 20px;
-    font-weight: normal;
+    font-weight: ${props => (props.available ? 'normal' : 'bold')};
   }
 
   span {
     display: block;
     margin-topo: 3px;
-    color: ${props => (props.available ? '#999' : '#666')};
+    color: ${props => (props.available ? '#999' : '#000')};
+    font-weight: ${props => (props.available ? 'normal' : 'bold')};
   }
 `;
