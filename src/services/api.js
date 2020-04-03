@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://159.89.52.31'
+  baseURL: 'https://gobarber.devjones.com.br'
 });
 
 export default api;
